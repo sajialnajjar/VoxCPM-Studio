@@ -1,0 +1,59 @@
+# ── Python ────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# ── Virtual environment ────────────────────────────────────────────────────
+venv/
+env/
+.venv/
+.env/
+
+# ── Build / dist ──────────────────────────────────────────────────────────
+build/
+dist/
+*.egg-info/
+*.egg
+
+# ── Model weights / large binary files (download on first run) ────────────
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.gguf
+models/
+weights/
+huggingface_cache/
+
+# ── Audio output files (generated at runtime) ─────────────────────────────
+*.mp3
+output_*.wav
+generated_*.wav
+tmp_*.wav
+
+# ── Voice library runtime data (user-specific) ────────────────────────────
+voice_library/
+
+# ── IDE / OS ──────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*~
+Thumbs.db
+.DS_Store
+
+# ── Logs ──────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Temporary files ───────────────────────────────────────────────────────
+tmp/
+temp/
+.cache/
+
+# ── YouTube / personal content (not part of the tool itself) ──────────────
+youtube_script.md
