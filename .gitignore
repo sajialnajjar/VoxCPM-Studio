@@ -57,3 +57,4 @@ temp/
 
 # ── YouTube / personal content (not part of the tool itself) ──────────────
 youtube_script.md
+*.context.md

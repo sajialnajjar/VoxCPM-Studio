@@ -24,7 +24,7 @@ text-to-speech synthesis using [OpenBMB VoxCPM](https://github.com/OpenBMB/VoxCP
 ## 🗂️ Files in This Project
 
 ```
-f:\testmodel\
+VoxCPM-Studio/
 ├── voxcpm_studio.py    ← Main GUI application  ⬅ run this
 ├── requirements.txt    ← All dependencies
 ├── setup_venv.bat      ← Creates venv + installs packages (run ONCE)
@@ -40,7 +40,7 @@ f:\testmodel\
 Double-click **`setup_venv.bat`**  
 This script will:
 1. Find your Python 3.10 installation
-2. Create a virtual environment at `f:\testmodel\venv\`
+2. Create a virtual environment at `venv\`
 3. Install all required packages
 
 > ⚠️ **This may take 10–30 minutes** on first run because PyTorch and model weights are large.
@@ -75,19 +75,19 @@ If you prefer to run commands yourself:
 
 ```powershell
 # 1. Create venv with Python 3.10
-C:\Users\saji\AppData\Local\Programs\Python\Python310\python.exe -m venv f:\testmodel\venv
+python -m venv venv
 
 # 2. Activate it
-f:\testmodel\venv\Scripts\Activate.ps1
+.\venv\Scripts\Activate.ps1
 
 # 3. Upgrade pip
 python -m pip install --upgrade pip
 
 # 4. Install packages
-pip install -r f:\testmodel\requirements.txt
+pip install -r requirements.txt
 
 # 5. Launch
-python f:\testmodel\voxcpm_studio.py
+python voxcpm_studio.py
 ```
 
 ---

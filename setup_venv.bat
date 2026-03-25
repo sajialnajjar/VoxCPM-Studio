@@ -6,7 +6,7 @@
 
 setlocal enabledelayedexpansion
 
-set "PYTHON310=C:\Users\saji\AppData\Local\Programs\Python\Python310\python.exe"
+set "PYTHON310=python"
 set "VENV_DIR=%~dp0venv"
 set "REQ_FILE=%~dp0requirements.txt"
 
@@ -17,12 +17,13 @@ echo  ╚═══════════════════════�
 echo.
 
 :: ── Check Python 3.10 ────────────────────────────────────────
-if not exist "%PYTHON310%" (
-    echo  [ERROR] Python 3.10 not found at:
-    echo          %PYTHON310%
+"%PYTHON310%" --version >nul 2>&1
+if errorlevel 1 (
+    echo  [ERROR] Python was not found in your system PATH!
     echo.
     echo  Please install Python 3.10 from:
     echo  https://www.python.org/downloads/release/python-31011/
+    echo  Make sure to check "Add Python to PATH" during installation.
     echo.
     pause
     exit /b 1
